@@ -1,0 +1,995 @@
+body {
+    background-image: url("../Assets/BackG.jpg");
+}
+
+.cineVault {
+    display: none;
+}
+
+.movie {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 16px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Base*/
+
+body {
+    background-image: url("../Assets/BackG.jpg");
+}
+/*----------------------------------------------*/
+/* Page1 at style 2*/
+/*----------------------------------------------*/
+/* Page2 */
+#showing{
+    width:100%;
+    height: 800px; 
+    margin: 120px auto;
+    background-color: hwb(210 4% 95% / 0.5);
+}
+.BP2 {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+.Avatar2 {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+}
+
+.LyleLyle {
+    position: absolute;
+    left: 800px;
+    top: 50px;
+}
+
+.ChristmasCarol{
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+}
+
+/*----------------------------------------------*/
+/* Page3  internal Same Class 4 change name class fix*/
+#login-card-login{
+    width:400px;
+    border-radius: 25px;
+    margin:150px auto;
+    background-color: #a6a6a6;
+}
+
+#email-login{
+    width: 250px;
+    border-radius:30px;
+    background-color: #ebf0fc;
+    border-color: #ebf0fc;
+    color: #000000;
+}
+#click-login{
+    width:150px;
+    border-radius:30px;
+    background-color: #545A5F;
+    border-color: #545A5F;
+    color: #0A131A; 
+}
+#container-login{
+    margin-top:25px;
+    color: #0A131A;
+
+}
+.btn-circle.btn-sm-login{ 
+    width: 40px; 
+    height: 40px; 
+    padding: 2px 0px; 
+    border-radius: 25px; 
+    font-size: 14px; 
+    text-align: center;
+    
+    margin: 8px;
+}
+
+/*----------------------------------------------*/
+/* Page4  internal fix*/
+#login-card{
+    width:400px;
+    border-radius: 25px;
+    margin:150px auto;
+    background-color: #a6a6a6;
+    color: #000000;
+}
+
+#email{
+    width: 280px;
+    border-radius:0px;
+    background-color: #737373;
+    border-color: #737373;
+    color: #000000;
+}
+#click{
+    width:150px;
+    border-radius:0px;
+    background-color: #545A5F;
+    border-color: #545A5F;
+    color: #0A131A; 
+}
+#container{
+    margin-top:25px;
+    color: #0A131A;
+
+}
+
+.btn-circle.btn-sm { 
+            width: 40px; 
+            height: 40px; 
+            padding: 2px 0px; 
+            border-radius: 25px; 
+            font-size: 14px; 
+            text-align: center;
+            
+            margin: 8px;
+        }
+
+/*----------------------------------------------*/
+/* Page5 */
+
+.video-container {
+    position: absolute;
+    top: 4;
+    right: 0;
+}
+
+.movie{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    padding-left: 50px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-showtimes-button{
+    background-color: #ffa500;
+    border-radius: 60px;
+    width: 150px;
+    height: 40px;
+}
+/*----------------------------------------------*/
+/* Page6 */
+
+.model {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100vw;
+    color: white;
+    display: flex;
+
+    align-items: center;
+    padding: 16px;
+    border-top: 2px solid gray;
+}
+
+.model img {
+    margin: 0 32px;
+    height: 100px;
+}
+
+.model button {
+    border: none;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: orange;
+    font-size: 30px;
+    padding: 16px;
+    margin-left: 1000px;
+    width: 130px;
+    height: 100%;
+}
+
+.model .description {
+    display: flex;
+    padding: 16px;
+}
+
+.model .description h4 {
+    padding-left: 16px;
+}
+
+.model .time {
+    display: flex;
+}
+
+.model .time h4 {
+    color: black;
+    padding: 4px;
+    margin: 16px;
+}
+
+.model .time h4:nth-child(odd) {
+    background-color: orange;
+}
+
+.model .time h4:nth-child(even) {
+    background-color: yellow;
+}
+
+/*----------------------------------------------*/
+/* Page7 */
+.page7 {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 900px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sh {
+    margin-left: 40px;
+    padding: 16px;
+    display: flex;
+}
+
+.sh .screen{
+    padding: 16px;
+    text-align:center;
+    width:100%;
+    padding-left: 100px;
+}
+.sh .type{
+    display: flex;
+}
+
+.sh .type img{
+    height: 300px;
+}
+
+.Chair {
+    left: 60%;
+    padding-left: 100px;
+    font-size: 20px;
+}
+.choose-seat{
+    right: 40%;
+    padding-left: 100px;
+}
+.movie-container {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .poster {
+    width: 30%;
+    height: auto;
+    width: 200px;
+  }
+
+  .showtime {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .seat-type {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  .seat-image {
+    width: 45%;
+    height: auto;
+  }
+
+  .confirm-button {
+    padding: 10px 20px;
+    background-color: #FF914D;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+/*----------------------------------------------*/
+/* Page8 */
+
+.sum {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 50vw;
+    color: white;
+
+    margin: 24px;
+    align-items: center;
+    padding: 16px;
+    border-top: 2px solid gray;
+    margin-left: 50px;
+}
+
+.sum h1 {
+    font-size: 28px;
+}
+
+.sum button {
+    background-color: black;
+    border: 2px solid orange;
+    font-size: 30px;
+    color: white;
+    padding: 16px;
+    margin-left: 350px;
+    width: 200px;
+    height: 100%;
+    border-radius: 60px;
+}
+
+.sum .sumdes {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.sum .l2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.sum .l2 img {
+    width: 50px;
+}
+
+.alt {
+    display: flex;
+}
+
+.alt .rightElm .payment button {
+    justify-content: space-evenly;
+    background-color: black;
+    border: 2px solid orange;
+    font-size: 30px;
+    color: white;
+    padding: 16px;
+    width: 250px;
+    height: 100%;
+    border-radius: 60px;
+}
+
+/*----------------------------------------------*/
+/* Page9 */
+body {
+    background-image: url("../Assets/BackG.jpg");
+}
+
+.body .img img{
+    position: absolute;
+    width: 50px;
+    right: 0px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+#ticket-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    float: left;
+    width: 50%;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+#qr-code {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    right: 0;
+    width: 50%;
+    width: 350px;
+    margin-left: 30px;
+    margin-right: 400px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*----------------------------------------------*/
+/* Page10&11*/
+.page10 {
+    margin: auto;
+    width: 1500px;
+    height: 2000px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.page10 .Box1{
+    border-radius: 20px; 
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 250px;
+    height: 120px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.page10 .Box2{
+    border-radius: 20px; 
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 250px;
+    height: 120px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.page10 .Box3{
+    border-radius: 20px; 
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 250px;
+    height: 120px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.page10 .Box4{
+    border-radius: 20px; 
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 250px;
+    height: 120px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.page10 .Graph .topmovieday {
+    border-radius: 20px;
+    position: absolute;
+    left: 600px;
+    top: 150px;
+}
+.page10 .Graph .topmovieweek {
+    border-radius: 20px;
+    position: absolute;
+    right: 400px;
+    top: 150px;
+}
+.page10 .Graph .typemovie {
+    border-radius: 20px;
+    position: absolute;
+    left: 600px;
+    top: 500px;
+}
+.page10 .Graph .topmovieyear {
+    border-radius: 20px;
+    position: absolute;
+    right: 400px;
+    top: 500px;
+}
+.page10 .Graph .search1 {
+    position: absolute;
+    left: 960px;
+    top: 760px;
+}
+.page10 .Graph .search2 {
+    position: absolute;
+    right: 405px;
+    top: 760px;
+}
+.page10 .page11 h1{
+    margin-left: 50px;
+    color: white;
+}
+
+.page10 .page11 .container {
+    display: flex;
+    flex-direction: row;
+  }
+.page10 .page11 .data-visualization {
+    width: 70%;
+  }
+.page10 .page11 .filters {
+    width: 30%;
+    padding-left: 20px;
+  }
+
+/*----------------------------------------------*/
+/* Page12*/
+.page12 {
+    margin: auto;
+    width: 1500px;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.movie-type-table{
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+    border-radius: 20px;
+}
+.movies-type {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.movies-type h3 {
+    color: rgb(0, 0, 0);
+    margin: 0 0 10px 0;
+    font-size: 38px;
+}
+
+.movies-type table {
+    background-color: #ffffff;
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+.movies-type th,
+.movies-type td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.purchase-history th {
+    background-color: #ffffff;
+  }
+
+/*----------------------------------------------*/
+/* Page14/
+
+
+/* Page16&17 */
+body {
+    background-image: url("../Assets/BackG.jpg");
+}
+
+/*ขนาดพื้นหลัง*/
+.page16 {
+    margin: auto;
+    width: 1500px;
+    height: 1800px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+/*หัวเรื่อง*/
+.page16 h1{
+    margin-left: 50px;
+}
+
+/*การจัดวาง*/
+.page16 .secTop{
+    display: flex;
+}
+/*ยอดขายวันนี้*/
+.page16 .secTop .secA .upper{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 250px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 28px;
+}
+/* ยอดยกเลิกตั๋ววันนี้*/
+.page16 .secTop .secA .lower{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 250px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 28px;
+}
+
+.page16 .secTop .secA .lower .redText{
+    color: red;
+}
+
+.page16 .secTop .secB{
+    display: flex;
+}
+
+.page16 .secTop .secB .greenText{
+    color: green;
+}
+/* รายได้วันนี้*/
+.page16 .secTop .secB .left{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 28px;
+}
+/* รายได้เดือนนี้*/
+.page16 .secTop .secB .middle{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 28px;
+}
+/* กำไรเดือนนี้*/
+.page16 .secTop .secB .right{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 28px;
+}
+
+.page16 .secBot .secC{
+    display: flex;
+}
+
+/* ยอดขายตั๋วย้อนหลัง 7 วัน*/
+.page16 .secBot .secC .Cleft{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+
+/* ยอดยกเลิกตั๋วย้อนหลัง 7 วัน*/
+.page16 .secBot .secC .Cmid{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+/* รายได้ย้อนหลัง 30 วัน*/
+.page16 .secBot .secC .Cright{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 22px;
+}
+/*page17*/
+div.box{
+    margin-left: 50px;
+    display:flex;
+    box-sizing: border-box;
+    flex-direction: row;    
+    flex-wrap: wrap;
+  }
+  div.a{
+  display: block;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 32%;
+  height: 750px;
+  border-radius: 25px; 
+  border: 2px solid black;  
+
+  font-size: 22px;
+  text-align: center;
+  }
+  div.b{
+  display: block;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  width: 63%;
+  height: 700px;
+  
+  font-size: 22px;
+  }
+  div.b01{
+    display:flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  div.c{
+  display: block;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 45%;
+  height: 250px;
+  border-radius: 25px; 
+  border: 2px solid black;  
+  text-align: center;
+  }
+  div.d{
+  display: block;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 45%;
+  height: 250px;
+  border-radius: 25px; 
+  border: 2px solid black;  
+  text-align: center;
+  }
+  div.b02{
+  display: block;
+  box-sizing: border-box; 
+  width: 55%;
+  height: 400px;  
+  border-radius: 25px; 
+  border: 2px solid black;   
+  }
+  #AAA{
+    width:100%;
+    height: 680px; 
+    border-radius: 25px; 
+    background-color: #eeeff0;
+  }
+  .btn-circle.btn-sm { 
+            width: 40px; 
+            height: 40px; 
+            padding: 2px 0px; 
+            border-radius: 25px; 
+            font-size: 14px; 
+            text-align: center;
+            
+            margin: 8px;
+  }
+
+
+/*----------------------------------------------*/
+/*Page18*/
+.ITEMS{
+    display: flex;
+    margin:  100px 150px ;
+}
+.display-left{
+    width: 30%;
+}
+.display-right{
+    width: 50%;
+}
+
+/*----------------------------------------------*/
+/*Page19*/
+
+
+.Page19{
+    background-color: rgba(0, 0, 1, 0.5);
+    padding: 16px;
+    padding-left: 30px;
+}
+
+.schedule-showtime{
+    background-color: #ffa500;
+    border-radius: 60px;
+    width: 150px;
+    height: 40px;
+}
+.upload-data{
+    background-color: #ffffff;
+    border-radius: 60px;
+    width: 150px;
+    height: 40px;
+    margin-left: 45%;
+}
+.view-showtimes-button {
+    background-color: orange;
+    border-radius: 60px;
+    width: 200px;
+    height: 40px;
+}
+/*----------------------------------------------*/
+/* Page20*/
+.Search{
+    margin-left: 30%;
+}
+
+.btn-circle.btn-sm {
+    width: 40px;
+    height: 40px;
+    padding: 2px 0px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-align: center;
+    margin: 8px;
+}
+.login-card {
+    width: 400px;
+    border-radius: 25px;
+    margin: 150px auto;
+    background-color: #a6a6a6;
+    color: #000000;
+}
+
+.email {
+    width: 280px;
+    border-radius: 0px;
+    background-color: #737373;
+    border-color: #737373;
+    color: #000000;
+}
+
+.click {
+    width: 150px;
+    border-radius: 0px;
+    background-color: #545A5F;
+    border-color: #545A5F;
+    color: #0A131A;
+}
+
+.container {
+    margin-top: 25px;
+    color: #0A131A;
+}
+
+.btn-circle.btn-sm {
+    width: 40px;
+    height: 40px;
+    padding: 2px 0px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-align: center;
+    margin: 8px;
+}
+
+/*----------------------------------------------*/
+/* Page21*/
+
+.Page21{
+    background-color: rgb(16, 16, 16);
+    padding: 100px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 900px;
+}
+
+.user-picture {
+    width: 200px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.user-picture img {
+    width: 100%;
+}
+
+.user-details {
+    background-color: #343434;
+    border-radius: 20px;
+    color: white;
+    flex: 1;
+    padding: 50px;
+}
+
+.user-details h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.user-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.purchase-history {
+    color: white;
+    margin-top: 20px;
+}
+
+.purchase-history h3 {
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.purchase-history table {
+    background-color: #343434;
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+.purchase-history th,
+.purchase-history td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.purchase-history th {
+    background-color: #1d1d1d;
+  }
+
+
+/*----------------------------------------------*/
+/* Page22*/
+
+.MovieTicket{
+    margin-left: 50px;
+}
+/*----------------------------------------------*/
+/* Page23*/
+.page23 h2 {
+    color: white;
+    position: absolute;
+    left: 0;
+    margin-left: 5ch;
+}
+.page23 .flexbox .content h6 {
+    color: white;
+}
+.page23 .flexbox .content p {
+    color: white;
+    margin-bottom: 3px;
+}
+.page23 .flexbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: stretch;
+    padding-left: 110px;
+}
+.page23 .flexbox .content {
+    background-color: rgba(24, 23, 23, 0.76);
+    padding: 16px;
+    border-radius: 0px;
+}
+.page23 .flexbox .right {
+    text-align: right;
+}
