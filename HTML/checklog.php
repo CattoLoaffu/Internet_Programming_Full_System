@@ -8,14 +8,12 @@
     if($objResult)
     {
         $_SESSION['username'] = $objResult['userName'];
-        header("Location:page1-1.php");
-
-
+        header("Location:LoginMain.php");
     }
     else
     {
         echo "<script>alert('Username or Password incorrect')</script>";
-        echo "<script> window.location='page3.php';</script>";
+        echo "<script> window.location='login.php';</script>";
     }
     mysqli_close($con);
 ?>

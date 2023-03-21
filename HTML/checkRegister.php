@@ -19,7 +19,7 @@
     else
     {
         echo "<script> alert('Register failed)</script>";
-        echo "<script> window.location='page4.php';</script>";
+        echo "<script> window.location='register.php';</script>";
     }
     mysqli_close($con);
 ?>
