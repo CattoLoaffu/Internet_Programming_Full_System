@@ -6,10 +6,11 @@
     $password = $_POST["pass"];
     $conpassword = $_POST["conpass"];
     $idnum = $_POST["idnum"];
+    $tel = $_POST["tel"];
     $dateb = $_POST["bd"];
     $time = date("Y-m-d H:i:s");
 
-    $strSQL = "INSERT INTO user(t_stamp ,Email, password , userName , idcard , datebirth) VALUES ('$time','$email','$password','$name' ,'$idnum','$dateb')";
+    $strSQL = "INSERT INTO user(t_stamp ,Email, password , userName , idcard , Birthday , Phone_number) VALUES ('$time','$email','$password','$name' ,'$idnum','$dateb','$tel')";
     $objQuery = mysqli_query($con,$strSQL);
     if($objQuery)
     {

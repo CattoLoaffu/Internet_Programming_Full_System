@@ -7,7 +7,7 @@
     $objResult = mysqli_fetch_array($objQuery);
     if($objResult)
     {
-        $_SESSION['username'] = $objResult['userName'];
+        $_SESSION['username'] = $objResult['UserName'];
         header("Location:LoginMain.php");
     }
     else

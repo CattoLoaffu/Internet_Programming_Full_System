@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../CSS/style.css">
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="../CSS/style2.css">
-<?php include("checkSession.php"); ?>
+<?php include("../checkSession.php"); ?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -16,10 +16,6 @@
       
         <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css'>
       <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css'>
-      
-            <link rel="stylesheet" href="../CSS/style2.css">
-      
-        
       </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
@@ -33,14 +29,14 @@
             
           <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='Page1-1.php';" style="color: orange;">หน้าแรก </a>
+                  <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='LoginMain.php';" style="color: orange;">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2-1.php';">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='movieSh.php';">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
-                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.php';">
+                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='myticket.php';">
                                 </a>
                             </li>
                         </ul>

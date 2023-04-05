@@ -1,5 +1,7 @@
 body {
     background-image: url("../Assets/BackG.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .cineVault {
@@ -31,10 +33,10 @@ body {
     margin: 120px auto;
     background-color: hwb(210 4% 95% / 0.5);
 }
-.BP2 {
-    position: absolute;
-    left: 200px;
-    top: 50px;
+
+div .mDisplay{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .Avatar2 {
@@ -169,7 +171,6 @@ body {
     height: 100%;
     width: 100vw;
     color: white;
-    display: flex;
 
     align-items: center;
     padding: 16px;
@@ -992,4 +993,26 @@ div.box{
 }
 .page23 .flexbox .right {
     text-align: right;
+}
+
+.ticket-card{
+    border-radius: 20px;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    width: 600px;
+    height: 180px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+
+.ticketFullDetail h4{
+    border-radius: 20px;
+    width: 200px;
+    padding: 4px;
+    margin: 16px;
+    background-color: yellowgreen;
 }

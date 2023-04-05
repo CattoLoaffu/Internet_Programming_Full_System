@@ -20,11 +20,11 @@
                         <a class="nav-link active" href="javascript:void(0)" onclick="location.href ='index.html';">หน้าแรก </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.html';">ภาพยนตร์</a>
+                        <a class="nav-link" href="javascript:void(0)" onclick="location.href ='movieSh.html';">ภาพยนตร์</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0)">
-                            <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.html';">
+                            <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='myticket.php';">
                         </a>
                     </li>
                 </ul>
@@ -74,6 +74,9 @@
             </div>
             <div class="form-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONFIRM PASSWORD<br>
                 <center><input type="password" class="form-control" id="email" name="conpass"></center>
+            </div>
+            <div class="form-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone<br>
+                <center><input type="password" class="form-control" id="email" name="tel"></center>
             </div>
             <div class="form-group">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วัน/เดือน/ปีเกิด<br>
                 <center><input type="date" class="form-control" id="email" name="bd"></center>

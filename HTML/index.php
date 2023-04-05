@@ -34,11 +34,11 @@
                   <a class="nav-link active" href="javascript:void(0)" " onclick="location.href ='index.php';"style="color: orange;">หน้าแรก </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='Page2.php';">ภาพยนตร์</a>
+                                <a class="nav-link" href="javascript:void(0)" onclick="location.href ='movieSh.php';">ภาพยนตร์</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="javascript:void(0)">
-                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='Page22.php';">
+                                    <img src="../Assets/Ticket.png" style="width: 30px;" onclick="location.href ='myticket.php';">
                                 </a>
                             </li>
                         </ul>
