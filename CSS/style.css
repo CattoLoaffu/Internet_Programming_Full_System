@@ -1016,3 +1016,13 @@ div.box{
     margin: 16px;
     background-color: yellowgreen;
 }
+
+#cancelform{
+    width: 350px;
+    height: 250px;
+    box-sizing: border-box;
+    background-color: #ebf0fc;
+    border-color: #ebf0fc;
+    color: #000000;
+    resize: none;
+}

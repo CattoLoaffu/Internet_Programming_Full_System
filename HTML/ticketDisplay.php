@@ -12,6 +12,6 @@
     </div>
     <br>
     <div class="ticketFullDetail">
-        <h4 onclick="location.href ='ticketFullDetail.php?MovieName=<?php echo $movie['MovieName'] ?>&Showtime=<?php echo $movie['Showtime'] ?>&Seat=<?php echo $movie['Seat_number'] ?>'">ข้อมูลเพิ่มเติม...</h4>
+        <h4 onclick="location.href ='ticketFullDetail.php?MovieName=<?php echo $movie['MovieName'] ?>&Showtime=<?php echo $movie['Showtime'] ?>&Seat=<?php echo $movie['Seat_number'] ?>&Receipt_number=<?php echo $movie['Receipt_number'] ?>'">ข้อมูลเพิ่มเติม...</h4>
     </div>
 </div>

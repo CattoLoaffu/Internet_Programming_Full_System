@@ -5,6 +5,7 @@
     $mname = $_GET['MovieName'];
     $st = $_GET['Showtime'];
     $seat = $_GET['Seat'];
+    $ren = $_GET['Receipt_number'];
     $strSQL = "SELECT * FROM `ticket` WHERE username = '".$uname."'AND Showtime = '".$st."'";
     $query = mysqli_query($con,$strSQL);
     $row = mysqli_fetch_assoc($query);
@@ -58,7 +59,7 @@
     <title>Cinevault+</title>
     </head>
         <div id="ticket-info">
-            <img src="../Assets/remove.png" width=30px boder=2 align=right onclick="location.href ='ticketCancel.php?MovieName=<?php echo $row['MovieName'];?>&Seat=<?php echo $seat; ?>&Date=<?php echo $row['Date'];?>&Showtime=<?php echo $row['Showtime'];?>';">
+            <img src="../Assets/remove.png" width=30px boder=2 align=right onclick="location.href ='ticketCancelCause.php?MovieName=<?php echo $row['MovieName'];?>&Seat=<?php echo $seat; ?>&Date=<?php echo $row['Date'];?>&Showtime=<?php echo $row['Showtime'];?>&Receipt_number=<?php echo $movie['Receipt_number'] ?>';">
             <img src="<?php echo $col['ImgPull'];?>" width=200px boder=2 align=right  style="padding-right: 20px;">
             <h1 style="color: white;">จองที่นั่งสำเร็จ</h1>
             <p style="color: white;">ชื่อภาพยนตร์ : </p> 
