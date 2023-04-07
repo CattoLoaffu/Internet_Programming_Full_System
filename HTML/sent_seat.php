@@ -5,8 +5,7 @@ $date = date('Y-m-d'); // Get today's date in 'YYYY-MM-DD' format
 $showtime = $_POST['showtime'];
 $moviename = $_POST['MovieName'];
 $uname = $_SESSION['username'];
-$selectedSeats = explode(', ', $_POST['selectedSeatsInput']); 
-$string = implode(", ", $selectedSeats);
+$selectedSeats = explode(',', $_POST['selectedSeatsInput']); 
 $_SESSION['seat'] = $selectedSeats;
 // Create connection
 include("db.php");
@@ -37,6 +36,7 @@ foreach ($selectedSeats as $seatNumber) {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
   }
 }
+
   $query = "SELECT MAX(Receipt_number) as rn FROM ticket"; 
   $resultlastbill = mysqli_query($con, $query); 
   $row = mysqli_fetch_array($resultlastbill);
@@ -46,10 +46,28 @@ foreach ($selectedSeats as $seatNumber) {
   }else{
     $lastbill = ($lastbill + 1);
   }
+  $string = implode(", ", $selectedSeats);
   // Insert the data into the database
   $sql = "INSERT INTO ticket (Receipt_number ,Date, MovieName, Seat_number,Showtime ,username) VALUES ('$lastbill','$date','$moviename','$string','$showtime','$uname')";
   if (mysqli_query($con, $sql)) {
     echo "Seat booking for seat number $seatNumber successful";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($con);
+  }
+
+
+  $query = "SELECT MAX(Receipt_number) as rn FROM buy_history"; 
+  $resultlastbill = mysqli_query($con, $query); 
+  $row = mysqli_fetch_array($resultlastbill);
+  $lastbill = $row['rn'];
+  if($lastbill==''){
+    $lastbill=1;
+  }else{
+    $lastbill = ($lastbill + 1);
+  }
+  $str = "INSERT INTO buy_history (Receipt_number,Date,Theater_number,Showtime,MovieName,Seat_number,UserName) VALUES ('$lastbill','$date','','$showtime','$moviename','$string','$uname')";
+  if (mysqli_query($con, $str)) {
+    echo "Seat booking successful";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
   }
