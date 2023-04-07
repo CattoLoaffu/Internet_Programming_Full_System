@@ -144,8 +144,8 @@ input {
                 <input type="number" name="CopyrightCost" id="CopyrightCost" class="form-control" required> </a>
                 </p>
 
-                <p style="color:#ffffff" ><label for="image">รูปภาพ:</label>
-                <input type="file" name="image" id="image" accept="image/*" required>
+                <p style="color:#ffffff" ><label for="ImgSent">รูปภาพ:</label>
+                <input type="file" name="ImgSent" id="ImgSent" accept="image/*" required>
                 </p>
 
                     <table>
