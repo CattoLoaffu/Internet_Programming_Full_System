@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $sql = "SELECT * FROM theater WHERE TimeIn='$TimeIn' AND Showtime='$Showtime'";
   $result = $con->query($sql);
 
-  $result_movie = mysqli_query($con, "SELECT image FROM movie WHERE MovieName='".$row["MovieName"]."'");
+  $result_movie = mysqli_query($con, "SELECT ImgSent FROM movie WHERE MovieName='".$row["MovieName"]."'");
   $row_movie = mysqli_fetch_assoc($result_movie);
   
 }
@@ -120,11 +120,11 @@ if ($result->num_rows > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         echo "<tr><td>".$row["MovieName"]."</td><td>".$row["TimeIn"]."</td><td>".$row["Showtime"]."</td><td>".$row["Theater_number"]."</td><td>".$row["Theater_name"]."</td><td>".$row["Movieshowtime"]."</td>";
         // ตรวจสอบว่ามีรูปภาพหรือไม่
-        $query_img = "SELECT image FROM movie WHERE MovieName = '".$row['MovieName']."'";
+        $query_img = "SELECT ImgSent FROM movie WHERE MovieName = '".$row['MovieName']."'";
         $result_img = mysqli_query($con, $query_img);
         $row_img = mysqli_fetch_assoc($result_img);
-        if (!empty($row_img["image"])) {
-            echo "<td><img src='uploads/".$row_img['image']."' class='img-thumbnail' style='width: 150px; height: 150px;' /></td>";
+        if (!empty($row_img["ImgSent"])) {
+            echo "<td><img src='uploads/".$row_img['ImgSent']."' class='img-thumbnail' style='width: 150px; height: 150px;' /></td>";
         } else {
             echo "<td>No Image</td>";
         }

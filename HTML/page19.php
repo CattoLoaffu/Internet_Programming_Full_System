@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['ImgSent'])) {
     $MovieName = $_POST['MovieName'];
     $MovieType = $_POST['MovieType'];
     $TimeIn = $_POST['TimeIn'];
@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
     }
     
     // ตรวจสอบว่าไฟล์รูปถูกอัพโหลดหรือไม่
-    if ($_FILES['image']['error'] == UPLOAD_ERR_OK) {
-        $tmp_name = $_FILES['image']['tmp_name'];
-        $file_name = $_FILES['image']['name'];
+    if ($_FILES['ImgSent']['error'] == UPLOAD_ERR_OK) {
+        $tmp_name = $_FILES['ImgSent']['tmp_name'];
+        $file_name = $_FILES['ImgSent']['name'];
         $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
         $allowed_exts = ['jpg', 'jpeg', 'png', 'gif'];
         
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
             if(mysqli_num_rows($result) > 0){ // ถ้ามี ID ที่ตรงกับค่าที่รับเข้ามาในตาราง
                 echo "<div class='alert alert-danger' role='alert'>มีเลข ID นี้อยู่แล้ว</div>";
             }else{ // ถ้าไม่มี ID ที่ตรงกับค่าที่รับเข้ามาในตาราง
-                $sql = "INSERT IGNORE INTO movie (ID,MovieName,MovieType,MovieDetails,MovieTrailer,image,TimeIn,TimeOut,MovieLength,CopyrightCost)
+                $sql = "INSERT IGNORE INTO movie (ID,MovieName,MovieType,MovieDetails,MovieTrailer,ImgSent,TimeIn,TimeOut,MovieLength,CopyrightCost)
                 VALUES ('$ID','$MovieName','$MovieType','$MovieDetails','$MovieTrailer','$new_name','$TimeIn','$TimeOut','$MovieLength','$CopyrightCost')";
                 $result = mysqli_query($con, $sql); // ส่งคำสั่ง SQL ไปทำงาน
                 if($result){
