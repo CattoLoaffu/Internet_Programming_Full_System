@@ -217,8 +217,8 @@ include("checkSession.php");
     <div class="movie-container">
       <img class="poster" src="<?php echo $col['ImgPull'] ?>" alt="Movie 1 Poster">
       <h3 id="MovieName"><?php echo $col['MovieName']; ?></h3>
-      <input type="hidden" name="MovieName" id="MovieName" value="แบล็ค แพนเธอร์ วาคานด้าจงเจริญ">
-
+      <input type="hidden" name="MovieName" id="MovieName" value="<?php echo $col['MovieName']; ?>">
+      <input type="hidden" name="MovieType" id="MovieType" value="<?php echo $col['MovieType']; ?>">
       <p id="date"></p>
       <script src="../JS/RealDate.js"></script>
 
@@ -231,7 +231,9 @@ include("checkSession.php");
       </div>
       <p class="showtime">160บาท&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;180บาท</p>
       <p>Standard: <span id="normal">0</span></p>
+      <input type="hidden" id="normalInput" name="normalInput" value="">
       <p>Sofa Sweet: <span id="sofa">0</span></p>
+      <input type="hidden" id="sofaInput" name="sofaInput" value="">
       <p>จำนวนที่นั่งทั้งหมด: <span id="all-seats">0</span></p>
       <p>ที่นั่งที่เลือก: <span id="selectedSeats" name="selectedSeats">None</span></p>
       <input type="hidden" id="selectedSeatsInput" name="selectedSeatsInput" value="">
@@ -240,5 +242,5 @@ include("checkSession.php");
     </div>
   </div>
 </form>
-</body>
+</body>s
 </html>

@@ -23,6 +23,7 @@ function changeImage(imageId) {
    }
    document.getElementById("normal").textContent = normalSeatsSelected;
    document.getElementById("all-seats").textContent = allSeatsSelected;
+   document.getElementById("normalInput").value = normalSeatsSelected;
    updatePrice();
    updateSelectedSeats();
    enableSubmitButton();
@@ -46,6 +47,7 @@ function changeImageSofa(imageId) {
    }
    document.getElementById("sofa").textContent = specialSeatsSelected;
    document.getElementById("all-seats").textContent = allSeatsSelected;
+   document.getElementById("sofaInput").value = specialSeatsSelected;
    updatePrice();
    updateSelectedSeats();
    enableSubmitButton();
